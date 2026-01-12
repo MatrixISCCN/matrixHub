@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSALHI ILYAS | Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            line-height: 1.7;
+            color: #1f2937;
+            background-color: #f8fafc;
+        }
+
+        header {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 1.2rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 120px auto 0;
+            padding: 0 1.5rem 2rem;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #000000;
+            padding-left: 0.8rem;
+            color: #0f172a;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .subtitle {
+            color: #374151;
+            font-size: 1rem;
+        }
+
+        .project {
+            margin-bottom: 1.8rem;
+            padding: 1rem 1.2rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            background: #f9fafb;
+        }
+
+        footer {
+            border-top: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #374151;
+            background: #ffffff;
+        }
+
+        /* Subtle motion & micro-interactions (academic-safe) */
+        nav a {
+            position: relative;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background: #0022ff;
+            transition: width 0.25s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            scroll-margin-top: 110px;
+        }
+
+        .project {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 40px;
+            height: 3px;
+            background: #000000;
+        }
+
+        a {
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #0026ff;
+        }
+
+        /* Reduced-motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div><strong>Portfolio</strong></div>
+            <div>
+                <a href="#profile">Profile</a>
+                <a href="#academic">Academic</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="profile">
+            <h1>ESSALHI ILYAS</h1>
+            <p class="subtitle">BSc Student in Cybersecurity and Computer Networks</p>
+            <p class="subtitle">École Nationale des Sciences Appliquées – El Jadida</p>
+
+            <p>
+                I am an undergraduate student specializing in cybersecurity and computer networks.
+                My academic interests include network security, system protection, and ethical hacking.
+                I am currently developing practical experience through laboratory work, coursework,
+                and personal projects related to secure systems.
+            </p>
+        </section>
+
+        <section id="academic">
+            <h2>Academic Profile</h2>
+            <ul>
+                <li><strong>Program:</strong> Cybersecurity and Computer Networks (CCN)</li>
+                <li><strong>Institution:</strong> Ecole Nationale des Sciences Appliquées – El Jadida</li>
+                <li><strong>Core coursework:</strong> Network Security, Operating Systems, Cryptography</li>
+                <li><strong>Laboratory tools:</strong> Linux, Wireshark, Nmap, Python, SQL</li>
+                <li><strong>Languages:</strong> English, French, Arabic</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Academic and Personal Projects</h2>
+
+            <div class="project">
+                <h3>Security Assessment Tool</h3>
+                <p>
+                    Developed a Python-based tool as part of network security coursework.
+                    The project focused on basic vulnerability enumeration, including
+                    port scanning and service identification, with structured output
+                    for analysis and reporting.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Network Traffic Monitoring System</h3>
+                <p>
+                    Implemented a network monitoring application to observe and analyze
+                    real-time traffic patterns. The system was used to identify abnormal
+                    behavior and understand intrusion detection principles.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>File Encryption Utility</h3>
+                <p>
+                    Designed a file encryption and decryption utility applying standard
+                    cryptographic concepts studied in coursework. The project emphasized
+                    data confidentiality and integrity rather than performance optimization.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:ilyasessalhi2005@gmail.com">ilyasessalhi2005@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">https://github.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com" target="_blank">https://linkedin.com</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>ESSALHI ILYAS — ENSA El Jadida</p>
+    </footer>
+
+</body>
+
+</html>
